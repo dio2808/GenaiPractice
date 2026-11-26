@@ -6,7 +6,7 @@ def get_weather(city: str) -> str:
     return f"It is {city}!"
 
 agent = create_agent(
-    model="ollama:qwen2.5:7b",
+    model="ollama:qwen2.5:7b", 
     tools=[get_weather],
     system_prompt="You are a helpful assistant",
 )
